@@ -8,7 +8,7 @@ or without the manifold learning step, on the following data-sets:
     the proteins which have physical or functional association
 - Shock: are graphs of 2D shapes
 
-The algorithm to implement are:
+The algorithm implemented are:
 
 - Graph Kernels: deal with graph model and permit to express data in graphs
     with several kernels
