@@ -1,3 +1,6 @@
+
+# Introduction
+
 Aim: compare the performance of an SVM trained on thedifferentgraph kernel, with
 or without the manifold learning step, on the following data-sets:
 
