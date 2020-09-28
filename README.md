@@ -1,7 +1,7 @@
 
-# Introduction
+# Graph Learning
 
-Aim: compare the performance of an SVM trained on thedifferentgraph kernel, with
+Aim: compare the performance of an SVM trained on the different graph kernel, with
 or without the manifold learning step, on the following data-sets:
 
 - PPI: protein-protein interaction network where proteins are nodes and edge connect
