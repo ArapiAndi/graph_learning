@@ -1,6 +1,6 @@
 import numpy as np
 from numpy.linalg import norm
-from library.kernel_executor import KernelExecutor, FWExecutor
+from src.kernel_executor import KernelExecutor, FWExecutor
 
 
 class Shortest_Path_Kernel():

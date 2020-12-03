@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.svm import SVC
 
-from library.weisfeiler_lehman import Weisfeiler_Lehman_Kernel
-from library.svm_classifier import fit_n_components, classify
+from src.weisfeiler_lehman import Weisfeiler_Lehman_Kernel
+from src.svm_classifier import fit_n_components, classify
 
-PATH = "dataset/"
+PATH = "rsc/"
 
 
 def create_distance_matrix(file):
