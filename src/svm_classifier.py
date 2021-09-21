@@ -1,4 +1,5 @@
 from sklearn.model_selection import cross_val_score
+from sklearn.decomposition import PCA
 from sklearn.model_selection import StratifiedKFold
 from sklearn import svm
 import numpy as np
@@ -20,5 +21,4 @@ def fit_n_components(D, Y, manifold_learning, n_neighbors=14, n_iteration=20):
 def classify(D, labels):
     start_k_fold = StratifiedKFold(n_splits=10, shuffle=True)
     clf = svm.SVC(kernel="linear", C=1.0)
-    scores_ln = cross_val_score(clf, D, labels, cv=start_k_fold)
-    print(" SVM \n mean: " + str(str(np.mean(scores_ln)) + " \n std: " + str(np.std(scores_ln))))
+    #scores_ln = cross_val_score(clf, D, labels, cv=start_k_fold)

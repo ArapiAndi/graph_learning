@@ -1,0 +1,4 @@
+numpy
+sklearn
+matplotlib
+mplot3d-dragger
