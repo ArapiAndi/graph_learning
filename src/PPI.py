@@ -23,7 +23,7 @@ class PPI():
         sp_kernel = ShortestPathKernel()
         sp_graph = sp_kernel.compute_multi_shortest_paths(graphs[:]['am'])
         K = sp_kernel.threads_eval_similarities(sp_graph)
-        D = pairwise_distances(K, metric='euclidean', n_jobs=8)
+        D = pairwise_distances(K, metric='euclidean')
         plt.imshow(D, zorder=2, cmap='Blues', interpolation='nearest')
         plt.colorbar()
         plt.style.use("ggplot")

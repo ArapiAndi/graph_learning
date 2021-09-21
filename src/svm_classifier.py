@@ -21,4 +21,4 @@ def fit_n_components(D, Y, manifold_learning, n_neighbors=14, n_iteration=20):
 def classify(D, labels):
     start_k_fold = StratifiedKFold(n_splits=10, shuffle=True)
     clf = svm.SVC(kernel="linear", C=1.0)
-    #scores_ln = cross_val_score(clf, D, labels, cv=start_k_fold)
+    scores_ln = cross_val_score(clf, D, labels, cv=start_k_fold, n_jobs = 8)
